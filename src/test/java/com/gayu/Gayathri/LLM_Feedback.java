@@ -106,7 +106,7 @@ public class LLM_Feedback {
 		}
 		try {
 			WebDriverWait wait7 = new WebDriverWait(driver, 30);
-			WebElement feedback = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/feedback.svg']")));
+			WebElement feedback = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@icon='feedback']")));
 			feedback.click();
 			System.out.println("--------------------------*****************-----------------------");
 			System.out.println("The feedback icon is clicked");
@@ -121,16 +121,16 @@ public class LLM_Feedback {
 				driver.switchTo().window(window);
 				break;
 			}
-		try {
-			WebDriverWait wait7 = new WebDriverWait(driver, 30);
-			WebElement biosamp = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Input']")));
-			biosamp.getText();
-			System.out.println("--------------------------*****************-----------------------");
-			System.out.println("The getext the biosample id sucessfully");
-		} catch (Exception e) {
-			System.out.println("--------------------------*****************-----------------------");
-			System.out.println("The can't get biosample id");
-		}
+		// try {
+		// 	WebDriverWait wait7 = new WebDriverWait(driver, 30);
+		// 	WebElement biosamp = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@placeholder='Input']")));
+		// 	biosamp.getText();
+		// 	System.out.println("--------------------------*****************-----------------------");
+		// 	System.out.println("The getext the biosample id sucessfully");
+		// } catch (Exception e) {
+		// 	System.out.println("--------------------------*****************-----------------------");
+		// 	System.out.println("The can't get biosample id");
+		// }
 		try {
 			WebDriverWait wait7 = new WebDriverWait(driver, 30);
 			WebElement Text = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//textarea[@placeholder='Textarea']")));
