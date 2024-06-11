@@ -55,7 +55,7 @@ public class LLM_Feedback {
 		WebDriverWait wait2 = new WebDriverWait(driver, 20);
 		WebElement emailInput = wait2
 				.until(ExpectedConditions.elementToBeClickable(By.xpath("//input[@type='email']")));
-		emailInput.sendKeys("softwareteam45@gmail.com");
+		emailInput.sendKeys("softwaretestingteam9@gmail.com");
 		System.out.println("--------------------------*****************-----------------------");
 		System.out.println("Mail I'd is entered");
 		WebDriverWait wait3 = new WebDriverWait(driver, 20);
@@ -96,7 +96,7 @@ public class LLM_Feedback {
 		}
 		try {
 			WebDriverWait wait7 = new WebDriverWait(driver, 30);
-			WebElement icon = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//img[@src='/viewer/assets/images/colorsvg/info.svg']")));
+			WebElement icon = wait7.until(ExpectedConditions.elementToBeClickable(By.xpath("//nb-icon[@icon='info']")));
 			icon.click();
 			System.out.println("--------------------------*****************-----------------------");
 			System.out.println("The More info icon is clicked");
