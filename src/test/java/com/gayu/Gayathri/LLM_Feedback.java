@@ -1,4 +1,4 @@
-ackage com.gayu.Gayathri;
+package com.gayu.Gayathri;
 
 import java.net.MalformedURLException;
 import java.net.URL;
