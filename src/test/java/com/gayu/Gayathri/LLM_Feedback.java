@@ -1,4 +1,4 @@
-package com.gayu.Gayathri;
+ackage com.gayu.Gayathri;
 
 import java.net.MalformedURLException;
 import java.net.URL;
@@ -20,7 +20,7 @@ public class LLM_Feedback {
 	@BeforeTest
 	public void setup() throws MalformedURLException {
 		DesiredCapabilities dc = DesiredCapabilities.chrome();
-		URL url = new URL("http://172.20.23.92S:4444/wd/hub");
+		URL url = new URL("http://172.20.23.92:4444/wd/hub");
 		driver = new RemoteWebDriver(url, dc);
 	}
 
